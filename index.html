@@ -282,7 +282,7 @@
                             </div>
                             <div class="absolute inset-0 border-4 border-royal-900 rounded-full transform -rotate-12">
                             </div>
-                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop"
+                            <img src="BST09731.JPG"
                                 class="w-full h-full object-cover rounded-full shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
                                 alt="Groom">
                         </div>
@@ -303,7 +303,7 @@
                             </div>
                             <div class="absolute inset-0 border-4 border-royal-900 rounded-full transform rotate-12">
                             </div>
-                            <img src="https://plus.unsplash.com/premium_photo-1675107359841-eb9142494289?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            <img src="BST09881.JPG"
                                 class="w-full h-full object-cover rounded-full shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
                                 alt="Bride">
                         </div>
@@ -342,7 +342,7 @@
                             class="w-full md:w-[45%] mb-8 md:mb-0 text-left md:text-right pr-0 md:pr-12 pl-12 md:pl-0 order-1">
                             <h3 class="font-serif text-3xl text-gold-400 mb-2">The Engagement</h3>
                             <p class="font-sans text-gold-200 text-lg mb-1">MAY 3, 2026 | 10:00 AM</p>
-                            <p class="text-cream opacity-80 text-sm">ABISHEK MAHAL</p>
+                            <p class="text-cream opacity-80 text-sm">VEL MAHAL</p>
                             <p class="text-xs text-gold-500 mt-2 uppercase tracking-widest">Ring Ceremony</p>
                         </div>
                         <div
@@ -486,67 +486,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- CK Section -->
-        <section class="py-24 bg-royal-900 relative overflow-hidden">
-            <!-- Decorative bg elements -->
-            <div class="absolute top-0 right-0 w-64 h-64 opacity-5 pointer-events-none">
-                <i class="fas fa-mandala text-[20rem] text-gold-500 animate-spin-slow"></i>
-            </div>
-
-            <div class="container mx-auto px-4 relative z-10">
-                <div
-                    class="max-w-xl mx-auto bg-royal-800 p-8 md:p-12 rounded-lg border border-gold-500/30 shadow-2xl rsvp-container">
-                    <div class="text-center mb-8">
-                        <i class="fas fa-envelope-open-text text-5xl text-gold-500 mb-4"></i>
-                        <h2 class="font-serif text-4xl text-cream mb-2">CK</h2>
-                        <p class="text-gold-200">All should come with thier family</p>
-                    </div>
-
-                    <form id="rsvpForm" class="space-y-6">
-                        <div>
-                            <label class="block text-gold-400 text-sm uppercase tracking-wider mb-2">Full Name</label>
-                            <input type="text"
-                                class="w-full bg-royal-900 border-b border-gold-500 text-cream px-4 py-3 focus:outline-none focus:border-gold-300 transition-colors"
-                                placeholder="Enter your name" required>
-                        </div>
-
-                        <div>
-                            <label class="block text-gold-400 text-sm uppercase tracking-wider mb-2">Number of
-                                Guests</label>
-                            <select
-                                class="w-full bg-royal-900 border-b border-gold-500 text-cream px-4 py-3 focus:outline-none cursor-pointer">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-gold-400 text-sm uppercase tracking-wider mb-2">Attending?</label>
-                            <div class="flex gap-4 mt-2">
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="attendance"
-                                        class="form-radio text-gold-500 focus:ring-gold-500 bg-royal-900 border-gold-500"
-                                        checked>
-                                    <span class="ml-2 text-cream">Joyfully Accepts</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="attendance"
-                                        class="form-radio text-gold-500 focus:ring-gold-500 bg-royal-900 border-gold-500">
-                                    <span class="ml-2 text-cream">Gladly recived</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full bg-gold-500 text-royal-900 font-bold font-serif py-4 hover:bg-cream transition-colors duration-300 mt-4">
-                            GIFT MUST 😂
-                        </button>
-                    </form>
-
-                    <!-- Success Message (Hidden by default) -->
+                           <!-- Success Message (Hidden by default) -->
                     <div id="rsvpSuccess" class="hidden text-center py-10">
                         <i class="fas fa-check-circle text-6xl text-green-500 mb-4 scale-0 success-icon"></i>
                         <h3 class="font-serif text-3xl text-cream mb-2">Thank You!</h3>
@@ -563,6 +503,8 @@
             <p class="text-gray-700 text-xs mt-8">Designed with ❤️ for the special day</p>
         </footer>
     </main>
+
+ 
 
     <script>
         // ==================== GSAP ANIMATIONS ====================
@@ -809,24 +751,7 @@
             });
         });
 
-        const form = document.getElementById('rsvpForm');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            gsap.to(form, {
-                opacity: 0,
-                y: -20,
-                duration: 0.5,
-                onComplete: () => {
-                    form.style.display = 'none';
-                    const success = document.getElementById('rsvpSuccess');
-                    success.classList.remove('hidden');
-                    gsap.fromTo(".success-icon",
-                        { scale: 0, rotation: -180 },
-                        { scale: 1, rotation: 0, duration: 0.8, ease: "elastic.out(1, 0.5)" }
-                    );
-                }
-            });
-        });
+        
 
     </script>
 </body>
